@@ -29,5 +29,23 @@ namespace CapaPresentacion
             CNProductos objetoCN = new CNProductos();
             dgvProductos.DataSource = objetoCN.MostrarProducto();
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            CNProductos objetoCN = new CNProductos();
+            try
+            {
+                objetoCN.InsertarProducto(txtProducto.Text, txtDescripcion.Text, txtMarca.Text, float.Parse(txtPrecio.Text), int.Parse(txtStock.Text));
+                MessageBox.Show("Producto registrado correctamente");
+                MostrarProductos();
+            }
+            catch (Exception ex) 
+            { 
+                MessageBox.Show($"No se pudo insertar el producto: {ex} ");
+
+            }
+
+
+        }
     }
 }
