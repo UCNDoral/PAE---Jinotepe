@@ -26,5 +26,29 @@ namespace CapaDatos
             tabla.Load(leer);
             return tabla;
         }
+
+        public void Insertar(string nombre, string descripcion, string marca, float precio, int stock)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = """
+                                    INSERT INTO Productos (Nombre, Descripcion, Marca, Precio, Stock) 
+                                    VALUES (@Nombre, @Descripcion, @Marca, @Precio, @Stock)
+                                  """;
+            comando.Parameters.AddWithValue("@Nombre", nombre);
+            comando.Parameters.AddWithValue("@Descripcion", descripcion);
+            comando.Parameters.AddWithValue("@Marca", marca);
+            comando.Parameters.AddWithValue("@Precio", precio);
+            comando.Parameters.AddWithValue("@Stock", stock);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+        }
+
+
+
+
+
+
+
+
     }
 }
