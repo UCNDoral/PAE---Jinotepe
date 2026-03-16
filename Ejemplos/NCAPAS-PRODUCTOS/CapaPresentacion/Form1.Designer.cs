@@ -42,6 +42,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtStock = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
+            this.btbEditar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +75,7 @@
             this.dgvProductos.Location = new System.Drawing.Point(12, 224);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.RowHeadersVisible = false;
-            this.dgvProductos.Size = new System.Drawing.Size(776, 214);
+            this.dgvProductos.Size = new System.Drawing.Size(441, 214);
             this.dgvProductos.TabIndex = 0;
             this.dgvProductos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvProductos.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -236,11 +239,59 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Stock";
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BorderRadius = 4;
+            this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(355, 53);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(88, 35);
+            this.btnGuardar.TabIndex = 3;
+            this.btnGuardar.Text = "Guardar";
+            // 
+            // btbEditar
+            // 
+            this.btbEditar.BorderRadius = 4;
+            this.btbEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btbEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btbEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btbEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btbEditar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btbEditar.ForeColor = System.Drawing.Color.White;
+            this.btbEditar.Location = new System.Drawing.Point(355, 94);
+            this.btbEditar.Name = "btbEditar";
+            this.btbEditar.Size = new System.Drawing.Size(88, 35);
+            this.btbEditar.TabIndex = 3;
+            this.btbEditar.Text = "Editar";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BorderRadius = 4;
+            this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(355, 135);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(88, 35);
+            this.btnEliminar.TabIndex = 3;
+            this.btnEliminar.Text = "Eliminar";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(465, 450);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btbEditar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
@@ -274,6 +325,9 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtStock;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Button btnGuardar;
+        private Guna.UI2.WinForms.Guna2Button btbEditar;
+        private Guna.UI2.WinForms.Guna2Button btnEliminar;
     }
 }
 
