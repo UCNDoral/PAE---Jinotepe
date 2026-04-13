@@ -34,5 +34,11 @@ namespace CapaPresentacion
             FormFacturacion formFacturacion = new FormFacturacion();
             formFacturacion.ShowDialog();
         }
+
+        private void historialDeFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHistorialFacturas formHistorialFact = new FormHistorialFacturas();
+            formHistorialFact.ShowDialog();
+        }
     }
 }

@@ -37,30 +37,32 @@
             // 
             // dgvHistorial
             // 
+            this.dgvHistorial.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHistorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHistorial.Location = new System.Drawing.Point(12, 69);
             this.dgvHistorial.Name = "dgvHistorial";
             this.dgvHistorial.ReadOnly = true;
             this.dgvHistorial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHistorial.Size = new System.Drawing.Size(336, 150);
+            this.dgvHistorial.Size = new System.Drawing.Size(479, 150);
             this.dgvHistorial.TabIndex = 0;
             this.dgvHistorial.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistorial_CellClick);
             // 
             // dgvDetalles
             // 
+            this.dgvDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalles.Location = new System.Drawing.Point(438, 69);
+            this.dgvDetalles.Location = new System.Drawing.Point(12, 243);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.ReadOnly = true;
             this.dgvDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDetalles.Size = new System.Drawing.Size(339, 150);
+            this.dgvDetalles.Size = new System.Drawing.Size(479, 150);
             this.dgvDetalles.TabIndex = 1;
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(172, 21);
+            this.lblTitulo.Location = new System.Drawing.Point(166, 23);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(176, 20);
             this.lblTitulo.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(503, 409);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.dgvDetalles);
             this.Controls.Add(this.dgvHistorial);

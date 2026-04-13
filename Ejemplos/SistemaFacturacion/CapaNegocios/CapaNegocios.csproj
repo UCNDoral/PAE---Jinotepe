@@ -45,6 +45,7 @@
     <Compile Include="CNClientes.cs" />
     <Compile Include="CNProductos.cs" />
     <Compile Include="CN_Factura.cs" />
+    <Compile Include="CN_HistorialFactura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

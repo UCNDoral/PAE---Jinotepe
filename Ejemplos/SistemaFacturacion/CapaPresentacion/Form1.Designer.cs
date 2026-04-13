@@ -33,6 +33,7 @@
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historialDeFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.catalogosToolStripMenuItem,
-            this.facturarToolStripMenuItem});
+            this.facturarToolStripMenuItem,
+            this.historialDeFacturasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -77,6 +79,13 @@
             this.facturarToolStripMenuItem.Text = "Facturar";
             this.facturarToolStripMenuItem.Click += new System.EventHandler(this.facturarToolStripMenuItem_Click);
             // 
+            // historialDeFacturasToolStripMenuItem
+            // 
+            this.historialDeFacturasToolStripMenuItem.Name = "historialDeFacturasToolStripMenuItem";
+            this.historialDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.historialDeFacturasToolStripMenuItem.Text = "Historial de Facturas";
+            this.historialDeFacturasToolStripMenuItem.Click += new System.EventHandler(this.historialDeFacturasToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialDeFacturasToolStripMenuItem;
     }
 }
 
